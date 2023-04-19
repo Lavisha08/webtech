@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sum</title>
+        <script>
+            function add()
+            {
+            var a=parseInt(document.getElementById("number1").value);
+            var b=parseInt(document.getElementById("number2").value);
+            var sum=a+b;
+            document.getElementById("result").value=sum;
+            }
+            function sub()
+            {
+            var a=parseInt(document.getElementById("number1").value);
+            var b=parseInt(document.getElementById("number2").value);
+            var diff=a-b;
+            document.getElementById("result").value=diff;
+            }
+            function mul()
+            {
+            var a=parseInt(document.getElementById("number1").value);
+            var b=parseInt(document.getElementById("number2").value);
+            var mul=a*b;
+            document.getElementById("result").value=mul;
+            }
+            function div()
+            {
+            var a=parseInt(document.getElementById("number1").value);
+            var b=parseInt(document.getElementById("number2").value);
+            var div=a/b;
+            document.getElementById("result").value=div;
+            }
+            function clr()
+            {
+            document.getElementById("number1").value = "";
+            document.getElementById("number2").value = ""    ;
+            document.getElementById("result").value = "";
+            }
+           </script>
+           </head>
+           <body>
+            <p>enter the first no</p>
+            <input id="number1" type="text" placeholder="enter">
+            <p>enter the second no</p>
+            <input id="number2" type="text" placeholder="enter"><br><br>
+            <button onclick="add()">Add</button>
+            <button onclick="sub()">Subtract</button>
+            <button onclick="mul()">Multiply</button>
+            <button onclick="div()">Divide</button>
+            <button onclick="clr()">C</button>
+            <p>result</p>
+            <input id="result">
+
+           </body>
+
+</html>
